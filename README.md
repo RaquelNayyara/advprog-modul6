@@ -13,3 +13,11 @@ Baris terakhir hanya mencetak data. Tanda `?` menandakan bahwa cetakan ini dimak
 ### Commit 2 Reflection
 
 ![Commit 2 screen capture](assets/images/commit2.png)
+
+---
+
+### Commit 3 Reflection
+
+Saya melakukan refactor dengan menggunakan pernyataan if saat menginisialisasi baris status untuk respons dan nama file HTML untuk mengurangi kode yang berulang.
+
+![Commit 3 screen capture](assets/images/commit3.png)
