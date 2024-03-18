@@ -21,3 +21,9 @@ Baris terakhir hanya mencetak data. Tanda `?` menandakan bahwa cetakan ini dimak
 Saya melakukan refactor dengan menggunakan pernyataan if saat menginisialisasi baris status untuk respons dan nama file HTML untuk mengurangi kode yang berulang.
 
 ![Commit 3 screen capture](assets/images/commit3.png)
+
+---
+
+### Commit 4 Reflection
+
+Halaman `/sleep` lambat karena kami sengaja membuat thread sleep selama 10 detik menggunakan fungsi `thread::sleep()` sebelum memberikan respons.
