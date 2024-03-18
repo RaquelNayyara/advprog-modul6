@@ -27,3 +27,9 @@ Saya melakukan refactor dengan menggunakan pernyataan if saat menginisialisasi b
 ### Commit 4 Reflection
 
 Halaman `/sleep` lambat karena kami sengaja membuat thread sleep selama 10 detik menggunakan fungsi `thread::sleep()` sebelum memberikan respons.
+
+---
+
+### Commit 5 Reflection
+
+ThreadPool diimplementasikan dengan membuat vektor `workers`, di mana setiap `workers` akan membuat sebuah thread untuk menjalankan `job`. Kami menggunakan     `channels` untuk memfasilitasi komunikasi antara ThreadPool dan `workers`. Penerima `receiver` dikemas dengan `Mutex` untuk mencegah kondisi perlombaan dan `Arc` untuk menghindari peminjaman `receiver`.
