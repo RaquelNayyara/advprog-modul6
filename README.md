@@ -33,3 +33,9 @@ Halaman `/sleep` lambat karena kami sengaja membuat thread sleep selama 10 detik
 ### Commit 5 Reflection
 
 ThreadPool diimplementasikan dengan membuat vektor `workers`, di mana setiap `workers` akan membuat sebuah thread untuk menjalankan `job`. Kami menggunakan     `channels` untuk memfasilitasi komunikasi antara ThreadPool dan `workers`. Penerima `receiver` dikemas dengan `Mutex` untuk mencegah kondisi perlombaan dan `Arc` untuk menghindari peminjaman `receiver`.
+
+---
+
+### Commit Bonus Reflection
+
+Perbedaan antara fungsi `new()` yang lama dan fungsi `build()` yang baru adalah fungsi `build()` yang baru mengembalikan tipe Result, memudahkan penanganan kesalahan jika pembuatan ThreadPool gagal. Kemudian saat menggunakan fungsi `build`, ketika nilai dikembalikan ke pemanggil, nilai tersebut bisa diunwrapped untuk mendapatkan hasil dari eksekusi.
